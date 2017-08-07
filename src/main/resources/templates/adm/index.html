@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" href="/img/apple-touch-icon.png"/>
+    <link rel="icon" href="/img/icon.png" type="image/png"/>
+    <script th:src="@{js/jquery-3.1.1.min.js}"></script>
+    <script th:src="@{js/bootstrap.min.js}"></script>
+    <link rel="stylesheet" th:href="@{css/bootstrap.min.css}"/>
+    <title>Sticker Xu</title>
+</head>
+<body>
+<div style="width: 350px;margin: 15% auto">
+    <form th:action="@{/login}" method="post" th:class="form-horizontal">
+        <fieldset style="text-align: center">
+            <legend>Welcome to Sticker's site</legend>
+            <div th:class="form-group">
+                <label for="username" class="col-sm-3 control-label">帐号：</label>
+                <div th:class="col-sm-9">
+                    <input name="username" id="username" th:class="form-control" placeholder="请输入leqian帐号" required>
+                </div>
+            </div>
+            <div th:class="form-group">
+                <label for="password" class="col-sm-3 control-label">密码：</label>
+                <div th:class="col-sm-9">
+                    <input type="password" name="password" id="password" th:class="form-control" placeholder="请输入密码" required>
+
+                </div>
+            </div>
+            <div>
+                <button type="submit" class="btn btn-primary btn-block">立即登录</button>
+            </div>
+        </fieldset>
+    </form>
+</div>
+</body>
+</html>
