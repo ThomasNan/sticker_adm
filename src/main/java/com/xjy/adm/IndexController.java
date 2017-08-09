@@ -22,7 +22,7 @@ public class IndexController {
         return "adm/index";
     }
 
-    @PostMapping("/login")
+    @RequestMapping("/login")
     public void login(HttpServletRequest request, HttpServletResponse response) {
         String username = request.getParameter("username");
         String password = request.getParameter("password");

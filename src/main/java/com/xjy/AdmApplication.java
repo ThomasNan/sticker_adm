@@ -1,14 +1,7 @@
 package com.xjy;
 
-import org.apache.catalina.Context;
-import org.apache.catalina.connector.Connector;
-import org.apache.tomcat.util.descriptor.web.SecurityCollection;
-import org.apache.tomcat.util.descriptor.web.SecurityConstraint;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.boot.context.embedded.EmbeddedServletContainerFactory;
-import org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainerFactory;
-import org.springframework.context.annotation.Bean;
 
 @SpringBootApplication
 public class AdmApplication {
@@ -18,7 +11,7 @@ public class AdmApplication {
 	}
 
 	//HTTP请求转发
-	@Bean
+	/*@Bean
 	public EmbeddedServletContainerFactory servletContainer() {
 
 		TomcatEmbeddedServletContainerFactory tomcat = new TomcatEmbeddedServletContainerFactory() {
@@ -46,5 +39,5 @@ public class AdmApplication {
 		connector.setSecure(false);
 		connector.setRedirectPort(8443);
 		return connector;
-	}
+	}*/
 }
