@@ -18,7 +18,7 @@ public class IndexController {
     @RequestMapping(value = {"/",""})
     public String index(HttpServletRequest request) {
         String ipAddr = IpUtil.getIpAddr(request);
-        logger.info("user ip is {}", ipAddr);
+        logger.info("user's ip is：{}", ipAddr);
         return "adm/index";
     }
 
@@ -26,8 +26,8 @@ public class IndexController {
     public void login(HttpServletRequest request, HttpServletResponse response) {
         String username = request.getParameter("username");
         String password = request.getParameter("password");
-        logger.info("account is {}", username);
-        logger.info("pwd is {}", password);
+        logger.info("username is：{}", username);
+        logger.info("password：{}", password);
 
         try {
             response.setContentType("text/html;charset=UTF-8");
