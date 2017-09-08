@@ -30,6 +30,8 @@ dependencies {
 	compile('org.springframework.boot:spring-boot-starter-web')
 	runtime('org.springframework.boot:spring-boot-devtools')
 	compile('org.springframework.boot:spring-boot-starter-thymeleaf')
+	compile('org.apache.httpcomponents:httpclient:4.5.3')
+	compile('redis.clients:jedis:2.9.0')
 	testCompile('org.springframework.boot:spring-boot-starter-test')
 }
 
