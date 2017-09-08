@@ -58,4 +58,7 @@ class PersionComparator implements Comparator<Persion> {
     public int compare(Persion o1, Persion o2) {
         return o1.getAge()-o2.getAge();
     }
+    public int compare(Persion p1, Persion p2){
+        return p2.getAge()-p1.getAge();
+    }
 }
